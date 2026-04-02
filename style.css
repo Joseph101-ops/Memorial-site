@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover { color: #aaa; }
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fade { opacity: 0; animation: fadeIn 2s forwards; }
+@keyframes fadeIn { to { opacity: 1; } }
